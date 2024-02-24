@@ -11,6 +11,9 @@
             margin: 0px;
             padding: 0px;
         }
+        h1, h2, h3, h4{
+            margin-bottom: 10px;
+        }
         .header{
             background-color: #000;
             color: #fff;
@@ -32,69 +35,106 @@
         ul li a{
             text-decoration: none;
             color: #fff;
-            background-color: #BCBEC0;
+            background-color: #6A6B6D;
             display: inline-block;
             padding: 7px 15px;
         }
         ul li a:hover{
             background-color: #cc092f;
         }
+        .dflex{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .dflex .box{
+            padding:  0px 15px 15px;
+            background-color: #EFEFF0;
+        }
     </style>
 </head>
 <body>
     <h2 class="header"><img width="120px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Orkin_Logo.svg/1200px-Orkin_Logo.svg.png" alt=""> ORKIN LOCAL Display Banners</h2>
     <div class="content">
-        <h3>ORKIN GENERAL PEST Banners</h3>
-        <h4>General Pest HVC</h4>
-        <ul>
-            <li><a href="./ORKIN_GENERAL-PEST_Banners/General_Pest_HVC/300X250/index.html">300X250</a></li>
-        </ul>
-        <h4>General_Pest_In-Market</h4>
-        <ul>
-            <li><a href="./ORKIN_GENERAL-PEST_Banners/General_Pest_In-Market/300X250/index.html">300X250</a></li>
-        </ul>
 
-        <h4>General_Pest_RHB</h4>
-        <ul>
-            <li><a href="./ORKIN_GENERAL-PEST_Banners/General_Pest_RHB/300X250/index.html">300X250</a></li>
-        </ul>
-
-
-
-
-        <br>
-        <br>
-        <h3>ORKIN TERMITES Banners</h3>
-        <h4>Termite HVC</h4>
-        <ul>
-            <li><a href="./ORKIN_TERMITES _Banners/Termite_HVC/300X250/index.html">300X250</a></li>
-        </ul>
-
-
-
-        <br>
-        <br>
-        <br>
-        <h3>ORKIN GENERAL PEST Banners</h3>
-        <h4>General Pest HVC</h4>
-        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_HVC/300X250/index.html" width="300px" height="250px" frameborder="0"></iframe>
+        <div class="dflex">
+            <div class="box">
+                <h3>ORKIN GENERAL PEST Banners</h3>
+                <h4>General Pest HVC</h4>
+                <ul>
+                    <li><a href="./ORKIN_GENERAL-PEST_Banners/General_Pest_HVC/300X250/index.html">300X250</a></li>
+                </ul>
+                <h4>General_Pest_In-Market</h4>
+                <ul>
+                    <li><a href="./ORKIN_GENERAL-PEST_Banners/General_Pest_In-Market/300X250/index.html">300X250</a></li>
+                </ul>
         
-        <h4>General_Pest_In-Market</h4>
-        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_In-Market/300X250/index.html" width="300px" height="250px" frameborder="0"></iframe>
+                <h4>General_Pest_RHB</h4>
+                <ul>
+                    <li><a href="./ORKIN_GENERAL-PEST_Banners/General_Pest_RHB/300X250/index.html">300X250</a></li>
+                </ul>
+            </div>
 
-        <h4>General_Pest_RHB</h4>
-        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_RHB/300X250/index.html" width="300px" height="250px" frameborder="0"></iframe>
+            <div class="box">
+                <h3>ORKIN TERMITES Banners</h3>
+                <h4>Termite HVC</h4>
+                <ul>
+                    <li><a href="./ORKIN_TERMITES _Banners/Termite_HVC/300X250/index.html">300X250</a></li>
+                </ul>
+                <h4>Termite_In-Market</h4>
+                <ul>
+                    <li><a href="./ORKIN_TERMITES _Banners/Termite_In-Market/300X250/index.html">300X250</a></li>
+                </ul>
+                <h4>Termite_RHB</h4>
+                <ul>
+                    <li><a href="./ORKIN_TERMITES _Banners/Termite_RHB/300X250/index.html">300X250</a></li>
+                </ul>
+            </div>
+        </div>
+
+       
 
 
+
+
+
+        <br>
+        <br>
+        <br>
+        <h3>ORKIN GENERAL PEST Banners</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <div>
+                <h4>General Pest HVC</h4>
+                <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_HVC/300X250/index.html" width="300px" height="250px" frameborder="0"></iframe>
+            </div>
+            
+            <div>
+                <h4>General_Pest_In-Market</h4>
+                <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_In-Market/300X250/index.html" width="300px" height="250px" frameborder="0"></iframe>
+            </div>
+
+            <div>
+                <h4>General_Pest_RHB</h4>
+                <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_RHB/300X250/index.html" width="300px" height="250px" frameborder="0"></iframe>
+            </div>
+        </div>
+
+        <br><br><br>
         <h3>ORKIN TERMITES Banners</h3>
-        <h4>Termite HVC</h4>
-        <iframe src="./ORKIN_TERMITES _Banners/Termite_HVC/300X250/index.html" width="300px" height="250px" frameborder="0"></iframe>
-
-        <h4>Termite_In-Market</h4>
-        <iframe src="./ORKIN_TERMITES _Banners/Termite_In-Market/300X250/index.html" width="300px" height="250px" frameborder="0"></iframe>
-        
-        <h4>Termite_RHB</h4>
-        <iframe src="./ORKIN_TERMITES _Banners/Termite_RHB/300X250/index.html" width="300px" height="250px" frameborder="0"></iframe>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <div>
+                <h4>Termite HVC</h4>
+                <iframe src="./ORKIN_TERMITES _Banners/Termite_HVC/300X250/index.html" width="300px" height="250px" frameborder="0"></iframe>
+            </div>
+            <div>
+                <h4>Termite_In-Market</h4>
+                <iframe src="./ORKIN_TERMITES _Banners/Termite_In-Market/300X250/index.html" width="300px" height="250px" frameborder="0"></iframe>
+            </div>
+            <div>
+                <h4>Termite_RHB</h4>
+                <iframe src="./ORKIN_TERMITES _Banners/Termite_RHB/300X250/index.html" width="300px" height="250px" frameborder="0"></iframe>
+            </div>
+        </div>
     </div>
     
 </body>
