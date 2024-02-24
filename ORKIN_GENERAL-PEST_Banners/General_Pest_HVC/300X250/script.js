@@ -1,0 +1,48 @@
+// Banner duration timer start time
+var startTime;
+
+// Timeline reference
+var tl;
+
+// Init tricggered by onLoad in Body tag
+function init() {
+    // Set Banner duration timer
+    startTime = new Date();
+  
+    // Set Global Timeline
+    tl = new TimelineMax({ onComplete: endTime });
+  
+    animate();
+  }
+
+function animate() {
+    tl.set(["#main-container, #banner"], { autoAlpha: 1, force3D: true });
+    
+    //show image 1
+    tl.to(photo1, 1, {autoAlpha:1, ease: 'power4.inOut', }, "0.2");
+    
+    //show and hide copy 1
+    tl.to(copy1, 0.5, {left:15, autoAlpha:1, ease: "power1.out", }, "+=0.2");
+    tl.to(copy1, 0.5, {x:'-120', autoAlpha:0, ease: "power1.out", }, "+=1.8");
+    
+    //Hide image 1 show copy 2, image 2 and green teal
+    tl.to(copy2, 0.5, {left:15, autoAlpha:1, ease: "power1.out", }, "+=0.7");
+    tl.to(photo1, 1, {autoAlpha:0, ease: 'power4.inOut', }, "<");
+    tl.to(photo2, 1, {autoAlpha:1, ease: 'power4.inOut', }, "<");
+    tl.to(green_angle, 0.5, {autoAlpha:1, ease: "power1.out", y:'0'}, "-=0.6");
+    tl.to(copy2, 0.5, {x:'-120', autoAlpha:0, ease: "power1.out", }, "+=1.8");
+
+    // show copy 3 with cta and terms
+    tl.to(copy3, 0.5, {left:15, autoAlpha:1, ease: "power1.out", }, "+=1.9");
+    tl.to(["#cta"], 0.5, {bottom:20, autoAlpha:1, ease: "power1.out", }, "<");
+    tl.to(terms, {autoAlpha:1});
+
+}
+
+function endTime() {
+    // show total banner animation time in browser console.
+    var endTime = new Date();
+    console.log(
+      "Animation duration: " + (endTime - startTime) / 1000 + " seconds"
+    );
+  }
