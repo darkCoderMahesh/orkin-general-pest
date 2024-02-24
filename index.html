@@ -6,11 +6,23 @@
     <title>ORKIN_LOCAL_BIP_Display_Banners_2-0</title>
     <style>
 
-        body{
+        html, body{
             font-family: Arial, Helvetica, sans-serif;
             margin: 0px;
             padding: 0px;
-            padding: 50px;
+        }
+        .header{
+            background-color: #000;
+            color: #fff;
+            margin: 0px;
+            margin-bottom: 20px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .content{
+            padding: 20px;
         }
         ul{
             list-style: none;
@@ -20,10 +32,9 @@
         ul li a{
             text-decoration: none;
             color: #fff;
-            background-color: #6dbdb1;
+            background-color: #BCBEC0;
             display: inline-block;
             padding: 7px 15px;
-            border-radius: ;
         }
         ul li a:hover{
             background-color: #cc092f;
@@ -31,12 +42,26 @@
     </style>
 </head>
 <body>
-    <h2>ORKIN_GENERAL-PEST_Banners</h2>
-    <h3>General_Pest_HVC</h3>
-    <ul>
-        <li><a href="./ORKIN_GENERAL-PEST_Banners/General_Pest_HVC/300X250/index.html">300X250</a></li>
-    </ul>
-    <br>
-    <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_HVC/300X250/index.html" width="300" height="250px" frameborder="0"></iframe>
+    <h2 class="header"><img width="120px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Orkin_Logo.svg/1200px-Orkin_Logo.svg.png" alt=""> ORKIN LOCAL Display Banners</h2>
+    <div class="content">
+        <h3>ORKIN GENERAL PEST Banners</h3>
+        <h4>General Pest HVC</h4>
+        <ul>
+            <li><a href="./ORKIN_GENERAL-PEST_Banners/General_Pest_HVC/300X250/index.html">300X250</a></li>
+        </ul>
+        <br>
+        <br>
+        <h3>ORKIN TERMITES Banners</h3>
+        <h3>Termite HVC</h3>
+        <ul>
+            <li><a href="./ORKIN_TERMITES _Banners/Termite_HVC/300X250/index.html">300X250</a></li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_HVC/300X250/index.html" width="300" height="250px" frameborder="0"></iframe>
+
+        <iframe src="./ORKIN_TERMITES _Banners/Termite_HVC/300X250/index.html" width="300" height="250px" frameborder="0"></iframe>
+    </div>
 </body>
 </html>
