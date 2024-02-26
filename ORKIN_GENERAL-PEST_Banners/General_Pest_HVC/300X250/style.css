@@ -2,12 +2,14 @@
   font-family: "tungsten bold";
   src: url(Tungsten-Bold.ttf);
 }
+
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 *,
 :after,
 :before {
@@ -18,13 +20,16 @@ html {
   -ms-user-select: none;
   user-select: none;
 }
+
 body {
   margin: 0;
   padding: 0;
 }
+
 #main-container * {
   position: absolute;
 }
+
 #main-container {
   position: absolute;
   width: 300px;
@@ -38,10 +43,12 @@ body {
   /* left: 50%;
   transform: translateX(-50%); */
 }
-#banner{
-    width: 300px;
-    height: 250px;
+
+#banner {
+  width: 300px;
+  height: 250px;
 }
+
 #bg-exit {
   cursor: pointer;
   position: absolute;
@@ -49,60 +56,97 @@ body {
   height: 100%;
   z-index: 2;
 }
-.hidden{
-    visibility: hidden;
-    opacity: 0;
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
 }
-.copy{
-    font-family: "tungsten bold";
-    font-size: 36px;
-    line-height: 31px;
-    width: 285px;
-    left: 15px;
-    top: 85px;
-    font-weight: 500;
-    left: -120px;
+
+.copy {
+  font-family: "tungsten bold";
+  font-size: 36px;
+  line-height: 31px;
+  width: 285px;
+  left: 15px;
+  top: 85px;
+  font-weight: 500;
+  left: -120px;
 }
-.copy span{
-    color: #cc092f;
+
+.copy span {
+  color: #cc092f;
 }
-.copy sup{
-    font-size: 9px;
-    margin-top: -10px;
-    margin-left: 1px;
+
+.copy sup {
+  font-size: 9px;
+  margin-top: -10px;
+  margin-left: 1px;
 }
-#green_angle{
-    transform: translate(0px, 60px);
+
+#green_angle {
+  transform: translate(0px, 60px);
 }
-#terms{
-    font-size: 6px;
-    font-family: Arial, Helvetica, sans-serif;
-    left: 15px;
-    bottom: 5px;
-    color: #6a6b6d;
+
+#terms {
+  font-size: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  left: 15px;
+  bottom: 5px;
+  color: #6a6b6d;
 }
-#cta{
-    font-family: "tungsten bold";
-    background-color: #6dbdb1;
-    color: #fff;
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 70px;
-    height: 20px;
-    border-radius: 5px;
-    left: 15px;
-    bottom: 22px;
-    z-index: 1;
-    letter-spacing: 0.6px;
-    bottom: -20px;
+
+#cta {
+  font-family: "tungsten bold";
+  background-color: #6dbdb1;
+  color: #fff;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 20px;
+  border-radius: 5px;
+  left: 15px;
+  bottom: 22px;
+  z-index: 1;
+  letter-spacing: 0.6px;
+  bottom: -20px;
+  position: absolute;
+  overflow: hidden;
 }
-#logo{
+
+#cta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.9), transparent);
+}
+
+.cta-anim::before {
+  animation: shine 5s ease-in-out infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+    transition-property: left;
+  }
+
+  12%,
+  100% {
+    left: 100%;
+    transition-property: left;
+  }
+}
+
+#logo {
   width: 71px;
   left: 150px;
   bottom: 51px;
 }
+
 .retina {
   /*    for display on retina screens images created @2x actual dimensions then scaled back by 50%.
   images are scaled from top left, which effects css when wanting to use other alignment
