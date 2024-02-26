@@ -17,16 +17,18 @@ function init() {
 
 function animate() {
     tl.set(["#main-container, #banner"], { autoAlpha: 1, force3D: true });
-    
+    tl.set(["#photo1, #photo2"], { rotationZ: 0.1, force3D:true});
+    tl.set(["#photo2"], { x:-300});
+
     tl.addLabel('frame_1', 0)
-      .to(photo1, 1, {autoAlpha:1, ease: 'power4.inOut', }, "frame_1")
+      .to(photo1, 1, { x:"0", autoAlpha:1, ease:"none" }, "frame_1")
       .to(copy1, 0.5, {left:15, autoAlpha:1, ease: "power1.out", }, "frame_1+=0.5")
       .to(copy1, 0.5, {x:'-120', autoAlpha:0, ease: "power1.out", }, "frame_1+=3");
 
     tl.addLabel('frame_2', 3.5)
       .to(copy2, 0.5, {left:15, autoAlpha:1, ease: "power1.out", }, "frame_2")
-      .to(photo1, 1, {autoAlpha:0, ease: 'power4.inOut', }, "frame_2")
-      .to(photo2, 1, {autoAlpha:1, ease: 'power4.inOut', }, "frame_2")
+      // .to(photo1, 1, {autoAlpha:0, ease: 'power4.inOut', }, "frame_2")
+      .to(photo2, 0.8, {autoAlpha:1, x:"0", ease:"none"}, "frame_2")
       .to(green_angle, 0.5, {autoAlpha:1, ease: "power1.out", y:'0'}, "frame_2")
       .to(copy2, 0.5, {x:'-120', autoAlpha:0, ease: "power1.out", }, "frame_2+=3")
     
