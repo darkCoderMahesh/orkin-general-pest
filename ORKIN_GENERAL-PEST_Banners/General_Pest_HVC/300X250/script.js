@@ -38,10 +38,10 @@ function animate() {
     // .to(copy3, 0.5, {left:15, autoAlpha:1, ease: "power1.out", }, "frame_3")
     // .staggerTo(["#cta"], 0.2, { bottom: 20, autoAlpha: 1, ease: "power1.out", }, "frame_3+=0.25")
     .to(["#cta"], 0.5, { bottom: 30, autoAlpha: 1, ease: "power1.out", }, "frame_3")
-    .to(copy2, 0.2, { y: '-20', opacity: 0, autoAlpha: 0, ease: "power1.out", }, "frame_3+=0.5")
-    .to(copy3, 0, { left: 15, y: '-20', autoAlpha: 1, ease: "power1.out", }, "frame_3+=0.7")
-    .to(copy3, 0.2, { left: 15, y: '0', autoAlpha: 1, ease: "power1.out", }, "frame_3+=0.7")
-    .to(["#cta"], 0.2, { bottom: 20, autoAlpha: 1, ease: "power1.out", }, "frame_3+=0.9")
+    .to(copy2, 0.5, { y: '-20', autoAlpha: 0, ease: "Power4.linear", }, "frame_3+=0.5")
+    .to(copy3, 0, { left: 15, y: '-20', autoAlpha: 1, ease: "Power4.linear", }, "frame_3+=1")
+    .to(copy3, 0.5, { left: 15, y: '0', autoAlpha: 1, ease: "Power4.linear", }, "frame_3+=1")
+    .to(["#cta"], 0.2, { bottom: 20, autoAlpha: 1, ease: "power1.out", }, "frame_3+=1.5")
     .to(terms, { autoAlpha: 1 })
 }
 
