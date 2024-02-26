@@ -23,22 +23,22 @@ function animate() {
   tl.addLabel('frame_1', 0)
     .to(photo1, 1, { x: "0", autoAlpha: 1, ease: "none" }, "frame_1")
     .to(copy1, 0.5, { left: 15, autoAlpha: 1, ease: "power1.out", }, "frame_1+=0.5")
-    .to(photo1, 3, { scale: 1.1, x: '-5', y: '10', autoAlpha: 1, ease: "none" }, "frame_1+=1")
+    .to(photo1, 3, { scale: 1.15, x: '-5', y: '10', autoAlpha: 1, ease: "none" }, "frame_1+=1")
     .to(copy1, 0.5, { x: '-120', autoAlpha: 0, ease: "power1.out", }, "frame_1+=3");
 
   tl.addLabel('frame_2', 3.5)
     .to(copy2, 0.5, { left: 15, autoAlpha: 1, ease: "power1.out", }, "frame_2")
     .to(photo2, 0.8, { autoAlpha: 1, x: "0", ease: "none" }, "frame_2")
     .to(green_angle, 0.5, { autoAlpha: 1, ease: "power1.out", y: '0' }, "frame_2")
-    .to(photo2, 5.5, { scale: 1.1, x: '-15', y: '-10', autoAlpha: 1, ease: "none" }, "frame_2+=0.8")
+    .to(photo2, 5.5, { scale: 1.15, x: '-15', y: '-10', autoAlpha: 1, ease: "none" }, "frame_2+=0.8")
 
 
   tl.addLabel('frame_3', 7)
-    .to(["#cta"], 0.5, { bottom: 30, autoAlpha: 1, ease: "power1.out", }, "frame_3")
-    .to(copy2, 0.5, { y: '-20', autoAlpha: 0, ease: "Power4.linear", }, "frame_3+=0.5")
-    .to(copy3, 0, { left: 15, y: '-20', autoAlpha: 1, ease: "Power4.linear", }, "frame_3+=1")
-    .to(copy3, 0.5, { left: 15, y: '0', autoAlpha: 1, ease: "Power4.linear", }, "frame_3+=1")
-    .to(["#cta"], 0.2, { bottom: 20, autoAlpha: 1, ease: "power1.out", }, "frame_3+=1.5")
+    .to(["#cta"], 0.3, { bottom: 30, autoAlpha: 1, ease: "power1.out", }, "frame_3")
+    .to(copy2, 0.5, { y: '-20', autoAlpha: 0, ease: "Power4.linear", }, "frame_3+=0.3")
+    .to(copy3, 0, { left: 15, y: '-20', autoAlpha: 1, ease: "Power4.linear", }, "frame_3+=0.8")
+    .to(copy3, 0.5, { left: 15, y: '0', autoAlpha: 1, ease: "Power4.linear", }, "frame_3+=0.8")
+    .to(["#cta"], 0.3, { bottom: 20, autoAlpha: 1, ease: "power1.out", }, "frame_3+=1.2")
     .to(terms, { autoAlpha: 1 })
 }
 
