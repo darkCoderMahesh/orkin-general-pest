@@ -86,8 +86,8 @@ svg {
 #green_angle {
 	top: 0;
 	right: 0;
-	-webkit-clip-path: polygon(0% 622px, 100% 542px, 100% 100%, 0% 100%);
-	clip-path: polygon(0% 622px, 100% 542px, 100% 100%, 0% 100%);
+	-webkit-clip-path: polygon(0% 636px, 100% 556px, 100% 100%, 0% 100%);
+	clip-path: polygon(0% 636px, 100% 556px, 100% 100%, 0% 100%);
 	background-color: #6dbdb1;
 	z-index: 3;
 	transform: translate(0px, 110px);
@@ -112,35 +112,27 @@ svg {
 
 .copy sup {
 	position: absolute;
-	font-size: 11px;
+	font-size: 12px;
 	font-weight: 900;
-	margin-top: -16px;
-    margin-left: 7px;
+	margin-top: -11px;
+	margin-left: 0px;
 }
 
 #bg1 {
 	background: url("../images/f1bg.jpeg") top left no-repeat;
-	background-size: 340%;
-	background-position: -216px -16px;
+	background-size: 400%;
+	background-position: -340px -80px;
 	z-index: 2;
 	transform-origin: 50% 50%;
-}
-#bg2 {
-	background: url("../images/f2bg.jpeg") top left no-repeat;
-	background-size: 340%;
-	background-position: -172px -6px;
-	z-index: 2;
-	transform-origin: 50% 50%;
-	transform: scale(1.1);
 }
 
-#bg3 {
-	background: url("../images/f3bg.jpeg") top left no-repeat;
-	background-position: -108px -21px;
-	background-size: 183%;
+#bg2 {
+	background: url("../images/f2bg.jpeg") top left no-repeat;
+	background-position: -280px -150px;
+	background-size: 250%;
 	width: 298px;
 	height: 600px;
-	transform: translateX(-85px);
+	transform: translateX(-120px);
 }
 
 #cta {
