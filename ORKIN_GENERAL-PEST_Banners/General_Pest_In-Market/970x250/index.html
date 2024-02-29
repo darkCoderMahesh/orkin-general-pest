@@ -44,7 +44,10 @@
 
 			//	Option to Load External Animation Library or Not (Greensock {0 - None, 1 - "Max", or 2 - "Lite"}).  If None Chosen, will default to not loading the Tweening Engine.
 			//	The loaded URI is the CDN endpoint to the latest version of GS.
-			$loadGS: 1
+			$loadGS: 1,
+
+			//	Size ([Width, Height]) of the collapsed state of the unit *If Not Rich, this is consists of the dimensions of the unit*
+			$size: [970, 250]
 		});
 
 	</script>
@@ -91,9 +94,9 @@
 			</div>
 
 			<div id="copy" class="free full-col no-point">
-				<h1 class="copy free no-point" id="copy1">AT THE<br>FIRST SIGN<br> OF <span>PESTS</span></h1>
-				<h1 class="copy free no-point" id="copy2">YOU<br>NEED<br>THE <span>PROS</span></h1>
-				<h1 class="copy free no-point" id="copy3">THE<br><span>BEST</span><br>IN PESTS<sup>TM</sup></h1>
+				<h1 class="copy free no-point" id="copy1">AT THE FIRST SIGN<br> OF <span>PESTS</span></h1>
+				<h1 class="copy free no-point" id="copy2">YOU NEED THE <span> PROS</span></h1>
+				<h1 class="copy free no-point" id="copy3">THE <span>BEST</span> IN PESTS<sup>TM</sup></h1>
 			</div>
 
 			<div id="cta" class="free no-point">
@@ -101,14 +104,13 @@
 				<img src="images/cta.png" id="cta_img" class="" alt="">
 			</div>
 
-			<div id="legal" class="free no-point">
-				©2024 Orkin LLC
-			</div>
+			<div id="legal" class="free no-point">©2024 ORKIN LLC</div>
 
 			<div id="splitter" class="free full-col no-point"></div>
-			<img src="images/green-angle.png" id="green_angle" class="hidden" alt="">
+			<div id="green_angle" class="free full-col no-point"></div>
 			<div id="bg1" class="free full-col"></div>
 			<div id="bg2" class="free"></div>
+
 
 			<!-- Custom Code Here -->
 
