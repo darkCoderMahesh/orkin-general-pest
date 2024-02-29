@@ -107,8 +107,9 @@ h1{
 }
 
 #legal {
-	width: 37px;
-	height: 4px;
+	font-size: 6px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #6a6b6d;
 	left: 11px;
 	top: 41px;
 	opacity: 0;
