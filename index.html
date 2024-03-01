@@ -48,15 +48,18 @@
             background-color: #1a1a1a;
             color: #f0f8ff;
             border-bottom: 5px solid #c4eb17;
-            border-radius: 10px 10px 0px 0px;
+            /* border-radius: 10px 10px 0px 0px; */
             overflow: hidden;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
         .tab-btn {
             width: 100%;
             border: none;
             color: #ffffff;
-            border-radius: 10px 10px 0px 0px;
+            /* border-radius: 10px 10px 0px 0px; */
             font-weight: 600;
             padding: 12px;
             cursor: pointer;
@@ -84,6 +87,25 @@
         .content.show {
             display: flex;
         }
+
+        .re_btn {
+            background-color: #c4eb17;
+            margin: 5px auto 0 0;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            border: none;
+            transform: rotate(0deg);
+            transition: all 0s ease;
+        }
+
+        .re_btn:hover {
+            transition: all 0.5s ease;
+            transform: rotate(360deg);
+        }
     </style>
 </head>
 
@@ -103,110 +125,278 @@
         <div class="tab-contents">
             <div class="content show" id="General Pest HVC">
                 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-                    <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_HVC/300x50/index.html" width="300px"
-                        height="50px" frameborder="0"></iframe>
-                    <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_HVC/320x50/index.html" width="320px"
-                        height="50px" frameborder="0"></iframe>
-                    <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_HVC/728x90/index.html" width="728px"
-                        height="90px" frameborder="0"></iframe>
-                    <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_HVC/970x250/index.html" width="970px"
-                        height="250px" frameborder="0"></iframe>
-                    <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_HVC/300X250/index.html" width="300px"
-                        height="250px" frameborder="0"></iframe>
-                    <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_HVC/300x600/index.html" width="300px"
-                        height="600px" frameborder="0"></iframe>
-                    <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_HVC/160x600/index.html" width="160px"
-                        height="600px" frameborder="0"></iframe>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>300X50</h6>
+                        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_HVC/300x50/index.html" width="300px"
+                            height="50px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>320X50</h6>
+                        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_HVC/320x50/index.html" width="320px"
+                            height="50px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>728x90</h6>
+                        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_HVC/728x90/index.html" width="728px"
+                            height="90px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>970X250</h6>
+                        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_HVC/970x250/index.html" width="970px"
+                            height="250px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>300X250</h6>
+                        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_HVC/300X250/index.html" width="300px"
+                            height="250px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>300x600</h6>
+                        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_HVC/300x600/index.html" width="300px"
+                            height="600px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>160x600</h6>
+                        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_HVC/160x600/index.html" width="160px"
+                            height="600px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
                 </div>
             </div>
             <div class="content" id="General_Pest_In-Market">
                 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-                    <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_In-Market/300x50/index.html" width="300px"
-                        height="50px" frameborder="0"></iframe>
-                    <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_In-Market/320x50/index.html" width="320px"
-                        height="50px" frameborder="0"></iframe>
-                    <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_In-Market/728x90/index.html" width="728px"
-                        height="90px" frameborder="0"></iframe>
-                    <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_In-Market/970x250/index.html" width="970px"
-                        height="250px" frameborder="0"></iframe>
-                    <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_In-Market/300X250/index.html" width="300px"
-                        height="250px" frameborder="0"></iframe>
-                    <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_In-Market/300x600/index.html" width="300px"
-                        height="600px" frameborder="0"></iframe>
-                    <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_In-Market/160x600/index.html" width="160px"
-                        height="600px" frameborder="0"></iframe>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>300X50</h6>
+                        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_In-Market/300x50/index.html"
+                            width="300px" height="50px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>320X50</h6>
+                        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_In-Market/320x50/index.html"
+                            width="320px" height="50px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>728x90</h6>
+                        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_In-Market/728x90/index.html"
+                            width="728px" height="90px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>970X250</h6>
+                        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_In-Market/970x250/index.html"
+                            width="970px" height="250px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>300X250</h6>
+                        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_In-Market/300X250/index.html"
+                            width="300px" height="250px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>300x600</h6>
+                        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_In-Market/300x600/index.html"
+                            width="300px" height="600px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>160x600</h6>
+                        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_In-Market/160x600/index.html"
+                            width="160px" height="600px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
                 </div>
             </div>
             <div class="content" id="General_Pest_RHB">
                 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-                    <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_RHB/300x50/index.html" width="300px"
-                        height="50px" frameborder="0"></iframe>
-                    <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_RHB/320x50/index.html" width="320px"
-                        height="50px" frameborder="0"></iframe>
-                    <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_RHB/728x90/index.html" width="728px"
-                        height="90px" frameborder="0"></iframe>
-                    <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_RHB/970x250/index.html" width="970px"
-                        height="250px" frameborder="0"></iframe>
-                    <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_RHB/300X250/index.html" width="300px"
-                        height="250px" frameborder="0"></iframe>
-                    <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_RHB/300x600/index.html" width="300px"
-                        height="600px" frameborder="0"></iframe>
-                    <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_RHB/160x600/index.html" width="160px"
-                        height="600px" frameborder="0"></iframe>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>300X50</h6>
+                        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_RHB/300x50/index.html" width="300px"
+                            height="50px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>320X50</h6>
+                        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_RHB/320x50/index.html" width="320px"
+                            height="50px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>728x90</h6>
+                        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_RHB/728x90/index.html" width="728px"
+                            height="90px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>970X250</h6>
+                        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_RHB/970x250/index.html" width="970px"
+                            height="250px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>300X250</h6>
+                        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_RHB/300X250/index.html" width="300px"
+                            height="250px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>300x600</h6>
+                        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_RHB/300x600/index.html" width="300px"
+                            height="600px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>160x600</h6>
+                        <iframe src="./ORKIN_GENERAL-PEST_Banners/General_Pest_RHB/160x600/index.html" width="160px"
+                            height="600px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
                 </div>
             </div>
             <div class="content" id="Termite HVC">
                 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-                    <iframe src="./ORKIN_TERMITES _Banners/Termite_HVC/300x50/index.html" width="300px" height="50px"
-                        frameborder="0"></iframe>
-                    <iframe src="./ORKIN_TERMITES _Banners/Termite_HVC/320x50/index.html" width="320px" height="50px"
-                        frameborder="0"></iframe>
-                    <iframe src="./ORKIN_TERMITES _Banners/Termite_HVC/728x90/index.html" width="728px" height="90px"
-                        frameborder="0"></iframe>
-                    <iframe src="./ORKIN_TERMITES _Banners/Termite_HVC/970x250/index.html" width="970px" height="250px"
-                        frameborder="0"></iframe>
-                    <iframe src="./ORKIN_TERMITES _Banners/Termite_HVC/300X250/index.html" width="300px" height="250px"
-                        frameborder="0"></iframe>
-                    <iframe src="./ORKIN_TERMITES _Banners/Termite_HVC/300x600/index.html" width="300px" height="600px"
-                        frameborder="0"></iframe>
-                    <iframe src="./ORKIN_TERMITES _Banners/Termite_HVC/160x600/index.html" width="160px" height="600px"
-                        frameborder="0"></iframe>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>300X50</h6>
+                        <iframe src="./ORKIN_TERMITES _Banners/Termite_HVC/300x50/index.html" width="300px"
+                            height="50px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>320X50</h6>
+                        <iframe src="./ORKIN_TERMITES _Banners/Termite_HVC/320x50/index.html" width="320px"
+                            height="50px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>728x90</h6>
+                        <iframe src="./ORKIN_TERMITES _Banners/Termite_HVC/728x90/index.html" width="728px"
+                            height="90px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>970X250</h6>
+                        <iframe src="./ORKIN_TERMITES _Banners/Termite_HVC/970x250/index.html" width="970px"
+                            height="250px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>300X250</h6>
+                        <iframe src="./ORKIN_TERMITES _Banners/Termite_HVC/300X250/index.html" width="300px"
+                            height="250px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>300x600</h6>
+                        <iframe src="./ORKIN_TERMITES _Banners/Termite_HVC/300x600/index.html" width="300px"
+                            height="600px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>160x600</h6>
+                        <iframe src="./ORKIN_TERMITES _Banners/Termite_HVC/160x600/index.html" width="160px"
+                            height="600px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
                 </div>
             </div>
             <div class="content" id="Termite_In-Market">
                 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-                    <iframe src="./ORKIN_TERMITES _Banners/Termite_In-Market/300x50/index.html" width="300px"
-                        height="50px" frameborder="0"></iframe>
-                    <iframe src="./ORKIN_TERMITES _Banners/Termite_In-Market/320x50/index.html" width="320px"
-                        height="50px" frameborder="0"></iframe>
-                    <iframe src="./ORKIN_TERMITES _Banners/Termite_In-Market/728x90/index.html" width="728px"
-                        height="90px" frameborder="0"></iframe>
-                    <iframe src="./ORKIN_TERMITES _Banners/Termite_In-Market/970x250/index.html" width="970px"
-                        height="250px" frameborder="0"></iframe>
-                    <iframe src="./ORKIN_TERMITES _Banners/Termite_In-Market/300X250/index.html" width="300px"
-                        height="250px" frameborder="0"></iframe>
-                    <iframe src="./ORKIN_TERMITES _Banners/Termite_In-Market/300x600/index.html" width="300px"
-                        height="600px" frameborder="0"></iframe>
-                    <iframe src="./ORKIN_TERMITES _Banners/Termite_In-Market/160x600/index.html" width="160px"
-                        height="600px" frameborder="0"></iframe>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>300X50</h6>
+                        <iframe src="./ORKIN_TERMITES _Banners/Termite_In-Market/300x50/index.html" width="300px"
+                            height="50px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>320X50</h6>
+                        <iframe src="./ORKIN_TERMITES _Banners/Termite_In-Market/320x50/index.html" width="320px"
+                            height="50px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>728x90</h6>
+                        <iframe src="./ORKIN_TERMITES _Banners/Termite_In-Market/728x90/index.html" width="728px"
+                            height="90px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>970X250</h6>
+                        <iframe src="./ORKIN_TERMITES _Banners/Termite_In-Market/970x250/index.html" width="970px"
+                            height="250px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>300X250</h6>
+                        <iframe src="./ORKIN_TERMITES _Banners/Termite_In-Market/300X250/index.html" width="300px"
+                            height="250px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>300x600</h6>
+                        <iframe src="./ORKIN_TERMITES _Banners/Termite_In-Market/300x600/index.html" width="300px"
+                            height="600px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>160x600</h6>
+                        <iframe src="./ORKIN_TERMITES _Banners/Termite_In-Market/160x600/index.html" width="160px"
+                            height="600px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
                 </div>
             </div>
             <div class="content" id="Termite_RHB">
                 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-                    <iframe src="./ORKIN_TERMITES _Banners/Termite_RHB/300x50/index.html" width="300px" height="50px"
-                        frameborder="0"></iframe>
-                    <iframe src="./ORKIN_TERMITES _Banners/Termite_RHB/320x50/index.html" width="320px" height="50px"
-                        frameborder="0"></iframe>
-                    <iframe src="./ORKIN_TERMITES _Banners/Termite_RHB/728x90/index.html" width="728px" height="90px"
-                        frameborder="0"></iframe>
-                    <iframe src="./ORKIN_TERMITES _Banners/Termite_RHB/970x250/index.html" width="970px" height="250px"
-                        frameborder="0"></iframe>
-                    <iframe src="./ORKIN_TERMITES _Banners/Termite_RHB/300X250/index.html" width="300px" height="250px"
-                        frameborder="0"></iframe>
-                    <iframe src="./ORKIN_TERMITES _Banners/Termite_RHB/300x600/index.html" width="300px" height="600px"
-                        frameborder="0"></iframe>
-                    <iframe src="./ORKIN_TERMITES _Banners/Termite_RHB/160x600/index.html" width="160px" height="600px"
-                        frameborder="0"></iframe>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>300X50</h6>
+                        <iframe src="./ORKIN_TERMITES _Banners/Termite_RHB/300x50/index.html" width="300px"
+                            height="50px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>320X50</h6>
+                        <iframe src="./ORKIN_TERMITES _Banners/Termite_RHB/320x50/index.html" width="320px"
+                            height="50px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>728x90</h6>
+                        <iframe src="./ORKIN_TERMITES _Banners/Termite_RHB/728x90/index.html" width="728px"
+                            height="90px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>970X250</h6>
+                        <iframe src="./ORKIN_TERMITES _Banners/Termite_RHB/970x250/index.html" width="970px"
+                            height="250px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>300X250</h6>
+                        <iframe src="./ORKIN_TERMITES _Banners/Termite_RHB/300X250/index.html" width="300px"
+                            height="250px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>300x600</h6>
+                        <iframe src="./ORKIN_TERMITES _Banners/Termite_RHB/300x600/index.html" width="300px"
+                            height="600px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <h6>160x600</h6>
+                        <iframe src="./ORKIN_TERMITES _Banners/Termite_RHB/160x600/index.html" width="160px"
+                            height="600px" frameborder="0"></iframe>
+                        <button class="re_btn" onclick="reloadFrame(event)"> <img src="refresh.svg"></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -238,6 +428,10 @@
 
         contentSelected.classList.add('show')
         //console.log(contentId)
+    }
+    function reloadFrame(e) {
+        var iframe = e.currentTarget.parentNode.children[1]
+        iframe.src = iframe.src
     }
 </script>
 
