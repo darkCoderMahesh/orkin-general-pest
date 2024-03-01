@@ -418,6 +418,7 @@
         tab.classList.add('active')
 
         const contents = document.querySelectorAll('.content')
+        
 
         contents.forEach((content) => {
             content.classList.remove('show')
@@ -425,7 +426,10 @@
 
         const contentId = tab.getAttribute('content-id')
         const contentSelected = document.getElementById(contentId)
-
+        const iframe = contentSelected.querySelectorAll('iframe')
+        iframe.forEach(item => {
+            item.src = item.src
+        })
         contentSelected.classList.add('show')
         //console.log(contentId)
     }
