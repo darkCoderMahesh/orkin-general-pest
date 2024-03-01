@@ -120,7 +120,7 @@ svg {
 }
 
 #bg1 {
-	background: url("../images/f1bg.jpeg") top left no-repeat;
+	background: url("../images/f1bg.jpg") top left no-repeat;
 	background-position: 420px -64px;
     background-size: 44%;
 	z-index: 2;
@@ -128,7 +128,7 @@ svg {
 }
 
 #bg2 {
-	background: url("../images/f2bg.jpeg") top left no-repeat;
+	background: url("../images/f2bg.jpg") top left no-repeat;
     background-position: 434px -72px;
     background-size: 40%;
     width: 728px;

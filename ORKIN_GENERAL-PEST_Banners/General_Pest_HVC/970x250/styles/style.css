@@ -6,6 +6,10 @@
 	font-family: "tungsten bold";
 	src: url(Tungsten-Bold.ttf);
 }
+@font-face {
+	font-family: "UniversLTStd";
+	src: url(Univers-LT-Std-Light.ttf);
+}
 :root {
 	--full-width: 970px;
 	--full-height: 250px;
@@ -112,7 +116,7 @@ img, svg {
 }
 
 #bg1 {
-	background: url("../images/f1bg.jpeg") top left no-repeat;
+	background: url("../images/f1bg.jpg") top left no-repeat;
 	background-size: 80%;
     background-position: 411px -163px;
 	z-index: 2;
@@ -120,7 +124,7 @@ img, svg {
 }
 
 #bg2 {
-	background: url("../images/f2bg.jpeg") top left no-repeat;
+	background: url("../images/f2bg.jpg") top left no-repeat;
 	background-size: 57%;
     background-position: 333px -26px;
 	width: 970px;
@@ -142,6 +146,7 @@ img, svg {
 #legal {
 	font-size: 8px;
     font-family: Arial, Helvetica, sans-serif;
+    font-family: "UniversLTStd";
     color: #6a6b6d;
     left: 20px;
     top: 233px;

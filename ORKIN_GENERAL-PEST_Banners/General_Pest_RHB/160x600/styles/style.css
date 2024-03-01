@@ -119,14 +119,14 @@ svg {
 }
 
 #bg1 {
-	background: url("../images/f1bg.jpeg") top left no-repeat;
+	background: url("../images/f1bg.jpg") top left no-repeat;
 	background-size: 340%;
 	background-position: -216px -16px;
 	z-index: 2;
 	transform-origin: 50% 50%;
 }
 #bg2 {
-	background: url("../images/f2bg.jpeg") top left no-repeat;
+	background: url("../images/f2bg.jpg") top left no-repeat;
 	background-size: 340%;
 	background-position: -172px -6px;
 	z-index: 2;
@@ -135,7 +135,7 @@ svg {
 }
 
 #bg3 {
-	background: url("../images/f3bg.jpeg") top left no-repeat;
+	background: url("../images/f3bg.jpg") top left no-repeat;
 	background-position: -108px -21px;
 	background-size: 183%;
 	width: 298px;
