@@ -133,7 +133,7 @@ svg {
 	background-size: 250%;
 	width: 298px;
 	height: 600px;
-	transform: rotate(0.035deg) translateX(-120px);
+	transform: rotate(0.035deg) translateX(-100px);
 }
 
 #cta {
