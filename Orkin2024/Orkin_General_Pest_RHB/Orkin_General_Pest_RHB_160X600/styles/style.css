@@ -123,6 +123,7 @@ svg {
 	background-size: 340%;
 	background-position: -216px -16px;
 	z-index: 2;
+	transform: rotate(0.035deg);
 	transform-origin: 50% 50%;
 }
 #bg2 {
@@ -131,7 +132,7 @@ svg {
 	background-position: -172px -6px;
 	z-index: 2;
 	transform-origin: 50% 50%;
-	transform: scale(1.1);
+	transform: rotate(0.035deg) scale(1.1);
 }
 
 #bg3 {
@@ -140,7 +141,7 @@ svg {
 	background-size: 183%;
 	width: 298px;
 	height: 600px;
-	transform: translateX(-85px);
+	transform: rotate(0.035deg) translateX(-85px);
 }
 
 #cta {

@@ -115,7 +115,7 @@ svg {
 	font-size: 11px;
 	font-weight: 900;
 	margin-top: -10px;
-    margin-left: 0px;
+	margin-left: 0px;
 }
 
 #bg1 {
@@ -123,6 +123,7 @@ svg {
 	background-size: 340%;
 	background-position: -172px -6px;
 	z-index: 2;
+	transform: rotate(0.035deg);
 	transform-origin: 50% 50%;
 }
 
@@ -132,7 +133,7 @@ svg {
 	background-size: 183%;
 	width: 298px;
 	height: 600px;
-	transform: translateX(-85px);
+	transform: rotate(0.035deg) translateX(-85px);
 }
 
 #cta {

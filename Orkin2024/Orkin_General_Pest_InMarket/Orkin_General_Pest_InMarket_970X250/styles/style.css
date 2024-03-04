@@ -116,6 +116,7 @@ img, svg {
 	background-size: 67%;
     background-position: 422px -97px;
 	z-index: 2;
+	transform: rotate(0.035deg);
 	transform-origin: 50% 50%;
 }
 
@@ -125,7 +126,7 @@ img, svg {
     background-position: 333px -26px;
 	width: 970px;
 	height: 374px;
-	transform: scale(1.25) translateX(-14px);
+	transform: rotate(0.035deg) scale(1.25) translateX(-14px);
 }
 
 #cta {
