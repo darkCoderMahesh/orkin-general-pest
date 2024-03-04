@@ -137,11 +137,11 @@ svg {
 
 #bg3 {
 	background: url("../images/f3bg.jpg") top left no-repeat;
-	background-position: -107px -21px;
+	background-position: -177px -21px;
     background-size: 185%;
 	width: 298px;
 	height: 600px;
-	transform: rotate(0.035deg) translateX(-85px);
+	transform: rotate(0.035deg) translateX(0px);
 }
 
 #cta {

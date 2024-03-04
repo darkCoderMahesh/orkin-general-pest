@@ -12,7 +12,7 @@ function init_animation() {
 	frame_one();
 	gsap.delayedCall(3, frame_two);
 	gsap.delayedCall(7, frame_three);
-	gsap.to("#bg1", 10, {scale:1.1, ease:Linear.easeNone});
+	gsap.to("#bg1", 7, {scale:1.1, ease:Linear.easeNone});
 	
 	$cta_width = $("#cta").width() + 30;
 }
@@ -22,7 +22,7 @@ function frame_one() {
 }
 
 function frame_two() {
-	gsap.to("#bg2", 10, { scale:1.1, ease:Linear.easeNone});
+	gsap.to("#bg2", 7, { scale:1, ease:Linear.easeNone});
     gsap.to("#green_angle", 1.5, { autoAlpha: 1, y: '0',ease:Linear.easeNone })
 	gsap.to("#copy1", 0.6, {alpha:0, ease:Power2.easeOut});
 	gsap.to("#bg1", 0.6, {alpha:0, delay:0.25, ease:Power2.easeOut});
@@ -31,7 +31,7 @@ function frame_two() {
 }
 
 function frame_three() {
-	gsap.to("#bg3", 10, {x:85, y:-25, scale:1, ease:Linear.easeNone});
+	gsap.to("#bg3", 7, {x:85, y:-25, scale:1, ease:Linear.easeNone});
 	gsap.to("#copy2", 0.6, {alpha:0, ease:Power2.easeOut});
 	gsap.to("#copy3", 0.8, {x:0, alpha:1, delay:0.8, ease:Power2.easeOut});
 	gsap.to("#bg2", 0.6, {alpha:0, delay:0.25, ease:Power2.easeOut});
