@@ -128,11 +128,11 @@ svg {
 
 #bg2 {
 	background: url("../images/f2bg.jpg") top left no-repeat;
-	background-position: -205px -4px;
+	background-position: -175px -4px;
 	background-size: 150%;
 	width: 410px;
 	height: 600px;
-	transform: rotate(0.035deg) translateX(-85px);
+	transform: rotate(0.035deg) translateX(0px);
 }
 
 #cta {

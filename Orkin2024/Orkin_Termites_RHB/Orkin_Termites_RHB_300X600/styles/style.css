@@ -99,7 +99,7 @@ svg {
     line-height: 41px;
     letter-spacing: 1px;
     left: 15px;
-    top: 294px;
+    top: 305px;
 	font-weight: 500;
 	transform: translateX(-400px);
 	opacity: 0;
@@ -147,7 +147,7 @@ svg {
 	height: 27px;
 	z-index: 4;
 	left: 16px;
-	bottom: 101px;
+	bottom: 95px;
 	opacity: 0;
 	transform: translateY(20px);
 	overflow: hidden;
