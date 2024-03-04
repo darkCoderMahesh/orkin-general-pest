@@ -127,8 +127,8 @@ svg {
 }
 #bg2 {
 	background: url("../images/f2bg.jpg") top left no-repeat;
-	background-size: 239%;
-    background-position: -320px -88px;
+	/* background-size: 239%;
+    background-position: -320px -88px; */
 	transform-origin: 50% 50%;
 	transform: rotate(0.035deg) scale(1.1);
 }

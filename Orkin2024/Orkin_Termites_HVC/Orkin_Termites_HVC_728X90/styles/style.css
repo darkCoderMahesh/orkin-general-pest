@@ -121,8 +121,8 @@ svg {
 
 #bg1 {
 	background: url("../images/f1bg.jpg") top left no-repeat;
-	background-position: 420px -64px;
-    background-size: 44%;
+	/* background-position: 420px -64px;
+    background-size: 44%; */
 	z-index: 2;
 	transform: rotate(0.035deg);
 	transform-origin: 50% 50%;
@@ -130,10 +130,10 @@ svg {
 
 #bg2 {
 	background: url("../images/f2bg.jpg") top left no-repeat;
-    background-position: 434px -72px;
-    background-size: 40%;
+    /* background-position: 434px -72px;
+    background-size: 40%; */
     width: 728px;
-    height: 162px;
+    height: 140px;
     transform: rotate(0.035deg) scale(1.05) translateY(0px);
 }
 

@@ -82,6 +82,7 @@ svg {
 	background-color: #efeff0;
 	z-index: 3;
 }
+
 #green_angle {
 	top: 0;
 	right: 0;
@@ -95,10 +96,10 @@ svg {
 .copy {
 	font-family: "tungsten bold";
 	font-size: 50px;
-    line-height: 41px;
-    letter-spacing: 1px;
-    left: 15px;
-    top: 294px;
+	line-height: 41px;
+	letter-spacing: 1px;
+	left: 15px;
+	top: 294px;
 	font-weight: 500;
 	transform: translateX(-400px);
 	opacity: 0;
@@ -119,8 +120,8 @@ svg {
 
 #bg1 {
 	background: url("../images/f1bg.jpg") top left no-repeat;
-	background-size: 239%;
-    background-position: -320px -88px;
+	/* background-size: 239%;
+    background-position: -320px -88px; */
 	z-index: 2;
 	transform: rotate(0.035deg);
 	transform-origin: 50% 50%;
@@ -128,19 +129,20 @@ svg {
 
 #bg2 {
 	background: url("../images/f2bg.jpg") top left no-repeat;
-	background-position: -153px -168px;
+	/* background-position: -153px -168px;
     background-size: 170%;
-    width: 490px;
-    height: 600px;
-	transform: rotate(0.035deg) translateX(-140px);
+    width: 490px; */
+	width: 390px;
+	height: 600px;
+	transform: rotate(0.035deg) scale(1.1) translateX(-90px);
 }
 
 #cta {
 	width: 106px;
-    height: 27px;
-    z-index: 4;
-    left: 16px;
-    bottom: 101px;
+	height: 27px;
+	z-index: 4;
+	left: 16px;
+	bottom: 101px;
 	opacity: 0;
 	transform: translateY(20px);
 	overflow: hidden;
@@ -149,7 +151,7 @@ svg {
 #legal {
 	font-size: 6px;
 	left: 15px;
-    bottom: 5px;
+	bottom: 5px;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #6a6b6d;
 	opacity: 0;

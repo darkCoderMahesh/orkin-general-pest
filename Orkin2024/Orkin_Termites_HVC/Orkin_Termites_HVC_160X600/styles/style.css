@@ -120,8 +120,8 @@ svg {
 
 #bg1 {
 	background: url("../images/f1bg.jpg") top left no-repeat;
-	background-size: 400%;
-	background-position: -340px -80px;
+	/* background-size: 400%;
+	background-position: -340px -80px; */
 	z-index: 2;
 	transform: rotate(0.035deg);
 	transform-origin: 50% 50%;

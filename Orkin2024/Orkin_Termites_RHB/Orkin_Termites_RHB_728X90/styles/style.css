@@ -121,16 +121,12 @@ svg {
 
 #bg1 {
 	background: url("../images/f1bg.jpg") top left no-repeat;
-	background-position: 440px -48px;
-    background-size: 43%;
 	z-index: 2;
 	transform: rotate(0.035deg);
 	transform-origin: 50% 50%;
 }
 #bg2 {
 	background: url("../images/f2bg.jpg") top left no-repeat;
-	background-position: 420px -64px;
-    background-size: 44%;
 	z-index: 2;
 	transform-origin: 50% 50%;
 	transform: rotate(0.035deg) scale(1.1);
@@ -138,11 +134,10 @@ svg {
 
 #bg3 {
 	background: url("../images/f3bg.jpg") top left no-repeat;
-	background-position: 414px 2px;
-    background-size: 40%;
+	transform-origin: 100% 50%;
 	width: 728px;
-	height: 162px;
-	transform: rotate(0.035deg) scale(1.25) translateX(-25px);
+	height: 90px;
+	transform: rotate(0.035deg) scale(1.15) translateY(-5px); 
 }
 
 #cta {
