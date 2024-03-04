@@ -9,7 +9,7 @@
 }
 @font-face {
 	font-family: "tungsten bold";
-	src: url(./Tungsten-Bold.ttf);
+	src: url(./Tungsten-Bold.woff2);
 }
 body, html {
 	margin: 0;
