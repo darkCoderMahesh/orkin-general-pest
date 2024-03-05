@@ -129,7 +129,7 @@ svg {
 #bg2 {
 	background: url("../images/f2bg.jpg") top left no-repeat;
 	width: 970px;
-	height: 250px;
+	height: 334px;
 	transform-origin: 100% 0%;
 	transform: rotate(0.035deg) scale(1.15) translateY(0px) ;
 }
