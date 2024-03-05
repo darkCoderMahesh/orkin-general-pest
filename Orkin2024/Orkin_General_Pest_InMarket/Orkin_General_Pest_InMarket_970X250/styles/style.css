@@ -113,20 +113,17 @@ img, svg {
 
 #bg1 {
 	background: url("../images/f1bg.jpg") top left no-repeat;
-	background-size: 67%;
-    background-position: 422px -97px;
 	z-index: 2;
 	transform: rotate(0.035deg);
-	transform-origin: 50% 50%;
+	transform-origin: 100% 50%;
 }
 
 #bg2 {
 	background: url("../images/f2bg.jpg") top left no-repeat;
-	background-size: 57%;
-    background-position: 333px -26px;
 	width: 970px;
-	height: 374px;
-	transform: rotate(0.035deg) scale(1.25) translateX(-14px);
+	height: 250px;
+	transform-origin: 100% 0%;
+	transform: rotate(0.035deg) scale(1.15) translateY(-14px);
 }
 
 #cta {
