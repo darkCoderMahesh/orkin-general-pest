@@ -22,7 +22,7 @@ function frame_one() {
 }
 
 function frame_two() {
-	gsap.to("#bg2", 10, { x: 0, y: -60, scale: 1, ease: Linear.easeNone });
+	gsap.to("#bg2", 8, { x: 0, y: -60, scale: 1, ease: Linear.easeNone });
 	gsap.to("#green_angle", 1.5, { autoAlpha: 1, y: '0', ease: Linear.easeNone })
 	gsap.to("#copy1", 0.6, { alpha: 0, ease: Power2.easeOut });
 	gsap.to("#bg1", 0.6, { alpha: 0, delay: 0.25, ease: Power2.easeOut });

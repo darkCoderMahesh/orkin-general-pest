@@ -127,9 +127,9 @@ svg {
 
 #bg2 {
 	background: url("../images/f2bg.jpg") top left no-repeat;
-	width: 230px;
+	width: 160px;
 	height: 600px;
-	transform: rotate(0.035deg) scale(1.15) translateX(-70px);
+	transform: rotate(0.035deg) scale(1.15);
 }
 
 #cta {
