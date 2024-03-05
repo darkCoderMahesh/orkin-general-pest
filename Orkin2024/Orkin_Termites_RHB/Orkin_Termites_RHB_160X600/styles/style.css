@@ -98,7 +98,7 @@ svg {
 	font-size: 37px;
     line-height: 31px;
     letter-spacing: 1px;
-    left: 15px;
+    left: 12px;
     top: 332px;
 	font-weight: 500;
 	transform: translateX(-400px);
@@ -120,16 +120,12 @@ svg {
 
 #bg1 {
 	background: url("../images/f1bg.jpg") top left no-repeat;
-	background-size: 355%;
-    background-position: -230px -20px;
 	z-index: 2;
 	transform: rotate(0.035deg);
 	transform-origin: 50% 50%;
 }
 #bg2 {
 	background: url("../images/f2bg.jpg") top left no-repeat;
-	background-size: 400%;
-    background-position: -340px -80px;
 	z-index: 2;
 	transform-origin: 50% 50%;
 	transform: rotate(0.035deg) scale(1.1);
@@ -137,18 +133,16 @@ svg {
 
 #bg3 {
 	background: url("../images/f3bg.jpg") top left no-repeat;
-	background-position: -177px -21px;
-    background-size: 185%;
-	width: 298px;
+	width: 160px;
 	height: 600px;
-	transform: rotate(0.035deg) translateX(0px);
+	transform: rotate(0.035deg) scale(1.1) translateX(0px);
 }
 
 #cta {
 	width: 106px;
 	height: 27px;
 	z-index: 4;
-	left: 16px;
+	left: 13px;
 	bottom: 110px;
 	opacity: 0;
 	transform: translateY(20px);
@@ -157,7 +151,7 @@ svg {
 
 #legal {
 	font-size: 6px;
-	left: 15px;
+	left: 12px;
 	bottom: 5px;
 	font-family: Arial, Helvetica, sans-serif;
 	color: #6a6b6d;
