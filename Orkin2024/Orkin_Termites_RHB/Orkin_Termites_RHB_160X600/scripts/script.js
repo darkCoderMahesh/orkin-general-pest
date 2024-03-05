@@ -31,7 +31,7 @@ function frame_two() {
 }
 
 function frame_three() {
-	gsap.to("#bg3", 7, { x: 0, scale: 1, ease: Linear.easeNone });
+	gsap.to("#bg3", 7, { scale: 1, ease: Linear.easeNone });
 	gsap.to("#copy2", 0.6, { alpha: 0, ease: Power2.easeOut });
 	gsap.to("#copy3", 0.8, { x: 0, alpha: 1, delay: 0.8, ease: Power2.easeOut });
 	gsap.to("#bg2", 0.6, { alpha: 0, delay: 0.25, ease: Power2.easeOut });

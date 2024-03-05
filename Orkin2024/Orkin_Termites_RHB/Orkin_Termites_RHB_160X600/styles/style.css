@@ -135,7 +135,8 @@ svg {
 	background: url("../images/f3bg.jpg") top left no-repeat;
 	width: 160px;
 	height: 600px;
-	transform: rotate(0.035deg) scale(1.1) translateX(0px);
+	transform-origin: 100% 0%;
+	transform: rotate(0.035deg) scale(1.1);
 }
 
 #cta {
