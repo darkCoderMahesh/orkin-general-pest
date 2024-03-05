@@ -16,13 +16,13 @@ function init_animation() {
 
 	$cta_width = $("#cta").width() + 10;
 }
-
+ 
 function frame_one() {
 	gsap.to("#copy1", 0.8, { x: 0, alpha: 1, ease: Power2.easeOut });
 }
 
 function frame_two() {
-	gsap.to("#bg2", 10, { scale: 1, x: 0, ease: Linear.easeNone });
+	gsap.to("#bg2", 10, { x: 0, y: -60, scale: 1, ease: Linear.easeNone });
 	gsap.to("#green_angle", 1.5, { autoAlpha: 1, y: '0', ease: Linear.easeNone })
 	gsap.to("#copy1", 0.6, { alpha: 0, ease: Power2.easeOut });
 	gsap.to("#bg1", 0.6, { alpha: 0, delay: 0.25, ease: Power2.easeOut });
