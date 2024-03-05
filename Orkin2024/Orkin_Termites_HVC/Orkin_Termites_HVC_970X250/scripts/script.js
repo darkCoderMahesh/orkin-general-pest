@@ -8,7 +8,7 @@ var $cta_width;
 /************************************ Custom JS *****************************************/
 
 function init_animation() {
-	"use strict";
+	"use strict"; 
 	frame_one();
 	gsap.delayedCall(3, frame_two);
 	gsap.delayedCall(7, frame_three);
@@ -22,7 +22,7 @@ function frame_one() {
 }
 
 function frame_two() {
-	gsap.to("#bg2", 10, { x: 100, y: -115, scale: 1, ease: Linear.easeNone });
+	gsap.to("#bg2", 10, { x: 0, y: -40, scale: 1, ease: Linear.easeNone });
 	gsap.to("#green_angle", 1.5, { autoAlpha: 1, y: '0', ease: Linear.easeNone })
 	gsap.to("#copy1", 0.6, { alpha: 0, ease: Power2.easeOut });
 	gsap.to("#bg1", 0.6, { alpha: 0, delay: 0.25, ease: Power2.easeOut });
