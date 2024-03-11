@@ -848,7 +848,7 @@ SOFTWARE.
 				break;
 
 			case "CV":
-				window.open("<mpvc/>http://<mpck/>");
+				window.open();
 				break;
 
 			case "":
